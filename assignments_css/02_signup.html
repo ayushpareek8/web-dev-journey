@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up page</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #233142;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .parentdiv {
+      background-color: #455d7a;
+      border-radius: 10px;
+      padding: 30px;
+      width: 400px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    h2 {
+      color: #f95959;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    input {
+      background-color: #e3e3e3;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 7px;
+      border: none;
+    }
+    button {
+      background-color: #f95959;
+      color: #e3e3e3;
+      padding: 10px;
+      border-radius: 7px;
+      border: none;
+    }
+    button:hover {
+      background-color: #f93d3d;
+      transition: background-color 0.3s ease;
+    }
+    .childdiv {
+      display: flex;
+      gap: 10px;
+    }
+    .childdiv input {
+      width: 50%;
+    }
+  </style>
+  <body>
+    <div class="parentdiv">
+      <h2>Sign Up</h2>
+      <form action="">
+        <input type="email" placeholder="Email" />
+        <div class="childdiv">
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Last name" />
+        </div>
+        <input type="password" placeholder="Password" />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
